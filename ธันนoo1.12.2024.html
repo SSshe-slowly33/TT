@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+</head>
+<body>
+    <h1>สุขสันต์วันเกิด คุณธัน❤️</h1>
+    <p>ขอให้คุณมีความสุขในวันเกิดและตลอดไป!</p>
+    <img src="c:\Users\suphi\Downloads\tt23.jpg" alt="Happy Birthday" />
+    <!DOCTYPE html>
+    <html lang="th">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday</title>
+<style>
+    body {font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;}
+    .message {font-size: 24px;
+            color: #fc84ec;
+            margin-bottom: 20px;
+            white-space: pre-wrap; /* ทำให้เว้นวรรคตามที่ต้องการ */}
+</style>
+</head>
+<body>
+<h1>สุขสันต์วันเกิด!</h1>
+<div class="message" id="message-container"></div>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Video</title>
+</head>
+<body>
+    <h1>สุขสันต์วันเกิด!</h1>
+
+    <!--c:\Users\suphi\Downloads\52acff6d-73f6-4499-9cec-e85ad4ec1748.mp4-->
+    <video width="640" height="360" controls>
+        <-- c:\Users\suphi\Downloads\52acff6d-73f6-4499-9cec-e85ad4ec1748.mp4 -->
+        <source src="c:\Users\suphi\Downloads\52acff6d-73f6-4499-9cec-e85ad4ec1748.mp4" type="video/mp4">
+
+    </video>
+</body>
+</html>
+   
+<script>
+    // ฟังก์ชันสำหรับการสุ่มจำนวนช่องว่าง
+    function getRandomSpaces() {
+        let count = Math.floor(Math.random() * 100) + 1;  // สุ่มจำนวนช่องว่าง
+        let spaces = '';
+        for (let i = 0; i < count; i++) {spaces += ' ';}
+            return spaces;}
+    
+// สร้างข้อความ
+    function generateMessages() {
+        let messageContainer = document.getElementById('message-container');
+        let space = '';
+        for (let i = 1; i <= 1000; i++) {space = getRandomSpaces();
+        if (i % 10 === 0) {messageContainer.innerHTML += space + '🎂Happy Birthday!<br>';} 
+        else if (i % 9 === 0) {messageContainer.innerHTML += space + '🎂<br>';} else if (i % 5 === 0) 
+        {messageContainer.innerHTML += space + '💛<br>';} else if (i % 8 === 0) 
+        {messageContainer.innerHTML += space + '🎉<br>';} else if (i % 7 === 0) 
+        {messageContainer.innerHTML += space + '🍫<br>';} else if (i % 6 === 0) 
+        {messageContainer.innerHTML += space + 'Happy Birthday!💖<br>';} else 
+        {messageContainer.innerHTML += space + '🔸<br>';}
+        }
+    }
+    
+    // เรียกใช้ฟังก์ชันเมื่อโหลดหน้า
+    window.onload = function() {
+        generateMessages();
+    };
+</script>
+</body>
+</html>
+    
